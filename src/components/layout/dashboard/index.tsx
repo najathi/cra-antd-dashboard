@@ -1,9 +1,8 @@
-'use client';
-
-import React from 'react';
 import { Layout, theme } from 'antd';
-import HeaderCmp from './Header';
+
+import DynamicBreadcrumb from '@/components/Breadcrumb/DynamicBreadcrumb';
 import SideBar from './SideBar';
+import HeaderCmp from './Header';
 import FooterCmp from './Footer';
 
 type DashboardLayoutProps = {
@@ -23,7 +22,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
       <Layout>
         <HeaderCmp />
         <Content className='m-4'>
-          {/* <DynamicBreadcrumb /> */}
+          <DynamicBreadcrumb />
           <div
             style={{
               padding: 24,
